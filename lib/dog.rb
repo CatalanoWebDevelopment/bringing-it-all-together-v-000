@@ -61,7 +61,7 @@ class Dog
     sql = <<-SQL
       SELECT * FROM dogs WHERE id = ?
     SQL
-binding.pry
+
     dog = DB[:conn].execute(sql, id)[0]
     new_dog = self.create(name: dog[1], breed: dog[2])
   end
