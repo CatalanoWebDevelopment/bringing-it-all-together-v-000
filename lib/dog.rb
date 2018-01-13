@@ -51,6 +51,6 @@ class Dog
 
   def self.create
   end
-    
+
 
 end
