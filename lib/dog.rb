@@ -55,5 +55,7 @@ class Dog
     new_dog
   end
 
+  self.find_by_id(id)
+
 
 end
