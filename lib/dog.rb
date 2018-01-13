@@ -63,7 +63,10 @@ class Dog
     SQL
 
     dog = DB[:conn].execute(sql, id)[0]
-    new_dog = self.create(name: dog[1], breed: dog[2])
+    self.id = dog[0]
+    self.name = dog[1]
+    self.breed = dog[2]
+    self
   end
 
   def self.find_or_create_by(name:, breed:)
