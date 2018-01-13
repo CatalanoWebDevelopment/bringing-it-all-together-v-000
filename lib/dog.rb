@@ -63,7 +63,7 @@ class Dog
     SQL
 
     dog = DB[:conn].execute(sql, id)[0]
-    {id: dog[0]}
+    {id: dog[0], name: dog[1], breed: dog[2]}
   end
 
   def self.find_or_create_by(name:, breed:)
