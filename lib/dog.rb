@@ -89,7 +89,7 @@ class Dog
 
   def self.new_from_db(row)
     binding.pry
-    new_dog = self.new(id:, name:, breed:)
+    new_dog = self.new
   end
 
 
