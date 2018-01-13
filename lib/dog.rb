@@ -87,5 +87,7 @@ class Dog
     self.create(id: dog[0], name: dog[1], breed: dog[2])
   end
 
+  def self.new_from_db(row)
+
 
 end
