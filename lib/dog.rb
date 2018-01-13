@@ -55,6 +55,7 @@ class Dog
     sql = <<-SQL
       SELECT * FROM dogs WHERE id = ?
     SQL
+    binding.pry
     DB[:conn].execute(sql, id)
   end
 
