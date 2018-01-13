@@ -63,7 +63,7 @@ class Dog
     SQL
 binding.pry
     dog = DB[:conn].execute(sql, id)[0]
-    new_dog = self.new
+    new_dog = self.new(name:, breed:)
     self.id = dog[0]
     self.name = dog
   end
